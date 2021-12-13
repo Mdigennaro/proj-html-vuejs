@@ -1,0 +1,9 @@
+@mixin alignCenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin justifyBeetwen{
+  display: flex;
+  justify-content: space-between;
+}
