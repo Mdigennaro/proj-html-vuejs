@@ -5,20 +5,22 @@
       <div class="header_tl">
         <nav>
           <ul>
-            <li><a href=""><i class="fas fa-phone"></i> 1.800.567.8910 <span>24hrs</span></a></li>
-            <li><a href=""><i class="fas fa-envelope"></i> Contact Us</a></li>
-            <li><a href=""><i class="fas fa-graduation-cap"></i> Alumni </a></li>
-            <li><a href=""><i class="fas fa-university"></i> Campus </a></li>
+            <li 
+            v-for="(contact, index) in contacts"
+            :key="index"
+            >
+              <a href=""><i :class="contact.icon"></i>{{contact.text}}<span :class="{bordo : contact.add !== ''}" >{{contact.add}}</span></a>
+            </li>
           </ul>
         </nav>
       </div>
       <div class="header_tr">
         <nav>
           <ul>
-            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href=""><i class="fab fa-twitter"></i></a></li>
-            <li><a href=""><i class="fab fa-youtube"></i></a></li>
-            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li 
+            v-for="(social, index) in socials"
+            :key="index"
+            ><a href=""><i :class="social"></i></a></li>
           </ul>
         </nav>
       </div>
@@ -29,7 +31,12 @@
 
 <script>
 export default {
-  name:"HeaderTop"
+  name:"HeaderTop",
+
+  props:{
+    contacts: Array,
+    socials: Object
+  }
 }
 </script>
 
@@ -38,18 +45,44 @@ export default {
 
   .header_top{
     height: 30%;
-    background-color:#ffab0b;
+    background-color:#f09a3f;
     @include alignCenter();
     font-size: 9px;
     
     .container_mdg{
       @include justifyBeetwen();
 
+      .header_tl{
+
+        li{
+          margin-right: 15px;
+
+          a{
+            color: white;
+            font-size: 10px;
+
+            .bordo{
+              background-color: #d48129;
+              border-radius: 2px;
+              font-size: 7px;
+              padding:3px 5px;
+              margin-left: 5px;
+            }
+
+            i{
+              font-size: 10px;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+
       .header_tr{
 
         i{
-          font-size: 13px;
-          margin-right: 0px;
+          color: white;
+          font-size: 12px;
+          margin: 0 8px;
         }
       }
     }

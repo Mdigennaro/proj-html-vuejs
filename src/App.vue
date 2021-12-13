@@ -21,6 +21,7 @@ export default {
     Main,
     Footer
   }
+  
 }
 </script>
 
@@ -28,8 +29,10 @@ export default {
 //Importo il file che contiene le classi generali o che si potrebbero ripetere
 @import "./assets/style/utilities.scss";
 @import "./assets/style/mixins.scss";
-//importo font awesome
+@import "./assets/style/vars.scss";
+//Font Awesome
 @import "~@fortawesome/fontawesome-free/css/all.css";
-//
-@import "~@fontsource/roboto/index.css"
+//Font Family
+@import "~@fontsource/roboto/index.css";
+
 </style>
