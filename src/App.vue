@@ -34,5 +34,5 @@ export default {
 @import "~@fortawesome/fontawesome-free/css/all.css";
 //Font Family
 @import "~@fontsource/roboto/index.css";
-
+@import "~@fontsource/roboto-slab/index.css";
 </style>
