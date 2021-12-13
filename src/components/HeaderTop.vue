@@ -42,10 +42,11 @@ export default {
 
 <style lang="scss">
 @import "../assets/style/mixins.scss";
+@import "../assets/style/vars.scss";
 
   .header_top{
     height: 30%;
-    background-color:#f09a3f;
+    background-color:$arancio;
     @include alignCenter();
     font-size: 9px;
     
@@ -58,7 +59,7 @@ export default {
           margin-right: 15px;
 
           a{
-            color: white;
+            color: $bianco;
             font-size: 10px;
 
             .bordo{
@@ -80,7 +81,7 @@ export default {
       .header_tr{
 
         i{
-          color: white;
+          color: $bianco;
           font-size: 12px;
           margin: 0 8px;
         }

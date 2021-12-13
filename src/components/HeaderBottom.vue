@@ -25,7 +25,7 @@
 export default {
   name: "HeaderBottom",
 
-  //prendo l 'array che si trova in header
+  //prendo l 'array menu che si trova in header
   props:{
     menu: Array
   }
@@ -33,6 +33,7 @@ export default {
 </script>
 
 <style lang="scss">
+//importo le mixins e le vars
 @import "../assets/style/mixins.scss";
 @import "../assets/style/vars.scss";
 
@@ -60,11 +61,11 @@ export default {
         }
 
         a:hover{
-          color: #f09a3f;
+          color: $arancio;
         }
         
         .active{
-          color: #f09a3f;
+          color: $arancio;
         }
 
         .bordo{
