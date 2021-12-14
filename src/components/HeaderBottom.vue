@@ -73,9 +73,9 @@ export default {
           margin: 0 7px;
           font-size: 8px;
           padding: 2px 6px;
-          background-color: #0ebcf2;
+          background-color: $azzurro;
           border-radius: 3px;
-          color:white;
+          color:$bianco;
         }
         
       }

@@ -10,6 +10,7 @@
 
         <button>Find a course</button>
         <button>Apply now</button>
+        
       </div>
 
     </div>
@@ -38,13 +39,14 @@ export default {
     @include center();
     text-align: center;
     color: $bianco;
+    font-family: 'Roboto Slab', sans-serif;
 
     h1{
-      font-size: 55px;
+      font-size: 52px;
     }
 
     h3{
-      font-size: 20px;
+      font-size: 18px;
       margin-bottom: 30px;
     }
 
@@ -52,6 +54,12 @@ export default {
       
       button{
         margin: 0px 10px;
+        font-size: 11px;
+        font-family: 'Roboto', sans-serif;
+      }
+      
+      button:last-of-type{
+        background-color: $azzurro;
       }
     }
     
