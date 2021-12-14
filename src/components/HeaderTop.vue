@@ -35,7 +35,7 @@ export default {
 
   props:{
     contacts: Array,
-    socials: Object
+    socials: Array
   }
 }
 </script>

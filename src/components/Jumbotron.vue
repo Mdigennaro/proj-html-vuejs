@@ -48,6 +48,8 @@ export default {
     h3{
       font-size: 18px;
       margin-bottom: 30px;
+      color:$bianco;
+      text-transform: none;
     }
 
     .bottoni_mdg{
