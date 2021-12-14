@@ -30,3 +30,13 @@ button{
   text-transform: uppercase;
   font-weight: bold;
 }
+
+p{
+  font-family: 'Roboto', sans-serif;
+}
+
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: table;
+}
