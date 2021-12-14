@@ -26,14 +26,14 @@ export default {
 
 <style lang="scss">
 @import "~@fontsource/roboto-slab/400.css";
-@import "../assets/style/utilities.scss";
-@import "../assets/style/mixins.scss";
-@import "../assets/style/vars.scss";
+@import "../../assets/style/utilities.scss";
+@import "../../assets/style/mixins.scss";
+@import "../../assets/style/vars.scss";
 
 
   .jumbotron_mdg{
     height: 650px;
-    background-image: url(../assets/img/home_main_slider_bg.jpg);
+    background-image: url(../../assets/img/home_main_slider_bg.jpg);
     background-position-y: -200px;
     background-size: cover;
     @include center();

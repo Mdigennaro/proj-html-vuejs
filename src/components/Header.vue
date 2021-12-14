@@ -13,8 +13,8 @@
 
 <script>
 //import
-import HeaderTop from './HeaderTop.vue';
-import HeaderBottom from './HeaderBottom.vue';
+import HeaderTop from './header-components/HeaderTop.vue';
+import HeaderBottom from './header-components/HeaderBottom.vue';
 
 export default {
   name: "Header",

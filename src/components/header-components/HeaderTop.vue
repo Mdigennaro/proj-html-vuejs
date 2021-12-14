@@ -41,8 +41,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../assets/style/mixins.scss";
-@import "../assets/style/vars.scss";
+@import "../../assets/style/mixins.scss";
+@import "../../assets/style/vars.scss";
 
   .header_top{
     height: 30%;

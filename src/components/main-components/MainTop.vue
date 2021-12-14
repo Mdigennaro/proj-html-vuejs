@@ -6,7 +6,7 @@
       <div class="container_mdg">
         <section class="intro_top_mdg">
 
-        <img src="../assets/img/page-logo-1.png" alt="logo">
+        <img src="../../assets/img/page-logo-1.png" alt="logo">
 
         <h2>Inspired By Excellence & Innovation</h2>
 
@@ -86,11 +86,11 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../assets/style/vars.scss';
-@import '../assets/style/mixins.scss';
+@import '../../assets/style/vars.scss';
+@import '../../assets/style/mixins.scss';
 
   .main_top_intro{
-    height: $h-main;
+    height: 650px;
     @include center();
 
     .container_mdg{
@@ -112,11 +112,6 @@ export default {
           font-size: 15px;
         }
 
-        .divisore_mdg{
-          border-bottom: 1px solid $arancio;
-          width: 135px;
-          margin: 30px auto;
-        }
       }
 
       .intro_bottom_mdg{
@@ -147,7 +142,7 @@ export default {
 
   .main_top_offerta{
     background-color: #f7f5f4;
-    height: 560px;
+    height: $h-main;
     @include alignCenter();
 
     .container_mdg{
@@ -200,6 +195,7 @@ export default {
           color: $arancio;
           background-color: $bianco;
           padding:12px 10px;
+          cursor: pointer;
         
           i{
             margin: 0 15px;

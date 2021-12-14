@@ -3,7 +3,7 @@
 
     <div class="container_mdg">
       <div class="logo_mdg">
-        <img src="../assets/img/university_logo.png" alt="logo">
+        <img src="../../assets/img/university_logo.png" alt="logo">
       </div>
       <div class="menu_mdg">
 
@@ -34,8 +34,8 @@ export default {
 
 <style lang="scss">
 //importo le mixins e le vars
-@import "../assets/style/mixins.scss";
-@import "../assets/style/vars.scss";
+@import "../../assets/style/mixins.scss";
+@import "../../assets/style/vars.scss";
 
 .header_bottom{
   height: 70%;
