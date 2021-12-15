@@ -31,10 +31,6 @@ button{
   font-weight: bold;
 }
 
-p{
-  font-family: 'Roboto', sans-serif;
-}
-
 .clearfix::after{
   content: "";
   clear: both;
@@ -48,6 +44,7 @@ h3{
 }
 
 p{
+  font-family: 'Roboto', sans-serif;
   margin: 20px 0;
   font-size: 12px;
   line-height: 25px;
