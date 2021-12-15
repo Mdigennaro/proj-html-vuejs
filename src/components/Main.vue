@@ -7,6 +7,8 @@
     :values="values"
     />
     <MainCenter :sections="sections" />
+    <MainBottom 
+    :news="news"/>
 
   </div>
 </template>
@@ -15,6 +17,7 @@
 import Jumbotron from './main-components/Jumbotron.vue';
 import MainTop from './main-components/MainTop.vue';
 import MainCenter from './main-components/MainCenter.vue';
+import MainBottom from './main-components/MainBottom.vue';
 
 export default {
   name: "Main",
@@ -22,7 +25,8 @@ export default {
   components:{
     Jumbotron,
     MainTop,
-    MainCenter
+    MainCenter,
+    MainBottom
   },
 
   data(){
@@ -86,8 +90,32 @@ export default {
           info:'latest news',
           add: 'View More'
         },
-      ]
+      ],
 
+      //Main Bottom
+      news:[
+        {
+          image:'news_single_post_header_1',
+          title:'What do successful grads think you should study?',
+          creator: 'admin',
+          date:'March 16th, 2016',
+          comment: 0
+        },
+        {
+          image:'news_single_post_header_2',
+          title:'Former student discusses success in the fashion industry',
+          creator: 'admin',
+          date:'March 15th, 2016',
+          comment: 0
+        },
+        {
+          image:'news_single_post_header_3',
+          title:'How do you best prepare for university?',
+          creator: 'admin',
+          date:'March 15th, 2016',
+          comment: 0
+        },
+      ]
     }
   }
 }
