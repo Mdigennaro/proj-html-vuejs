@@ -9,19 +9,24 @@
     :quickLinks="quickLinks"
     :events="events"
     />
+    <FooterBottom  :infoLinks="infoLinks"
+    :socials="socials"
+    />
   </footer>
 </template>
 
 <script>
 import FooterTop from './footer-components/FooterTop.vue';
 import FooterCenter from './footer-components/FooterCenter.vue';
+import FooterBottom from './footer-components/FooterBottom.vue';
 
 export default {
   name: "Footer",
 
   components:{
     FooterTop,
-    FooterCenter
+    FooterCenter,
+    FooterBottom
   },
 
   data(){
@@ -99,6 +104,34 @@ export default {
           date:'November 6, 2019 @ 8:00 am - November 6, 2021 @ 5:00 pm',
           state:'United Kingdom'
         }
+      ],
+
+      //Footer Bottom
+      infoLinks:[
+        {
+          link: '© Theme Fusion ',
+          dash: '|'
+        },
+        {
+          link: 'All Rights Reserved',
+          dash: '|'
+        },
+        {
+          link: 'Powered by WordPress',
+          dash: '|'
+        },
+        {
+          link: 'support@theme-fusion.com',
+          dash: '|'
+        },
+        {
+          link: '1.800.555.6789',
+          dash: ''
+        },
+      ],
+
+      socials:[
+        'fab fa-facebook-f', 'fab fa-twitter', 'fab fa-youtube', 'fab fa-instagram'
       ]
     }
   }
